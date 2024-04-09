@@ -1,0 +1,125 @@
+<FrameLayout
+    android:id="@+id/widget_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="160dp" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#ffffff">
+            <RelativeLayout
+                android:id="@+id/rl_date"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true">
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="#74141c"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_divider3"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/rl_date"
+                android:background="#74141c"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_class1"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/ll_divider3">
+                <TextView
+                    android:id="@+id/tv_class1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="#74141c"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_divider2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/rl_class1"
+                android:background="#74141c"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_class2"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/ll_divider2">
+                <TextView
+                    android:id="@+id/tv_class2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="#74141c"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/rl_exam1"
+            android:background="#74141c"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_exam1"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/tv_exam1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#74141c"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_exam2"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/rl_exam1"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/tv_exam2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#74141c"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
